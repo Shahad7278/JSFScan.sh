@@ -8,7 +8,7 @@ echo -e "\n-----------------------INSTALLING INTERLACE------------------------"
 cd ./tools
 git clone https://github.com/codingo/Interlace.git
 cd -
-pip3 install --user -r ./tools/Interlace/requirements.txt
+python3 -m pip install --user -r ./tools/Interlace/requirements.txt
 cd ./tools/Interlace/
 if ! test `which sudo`; then
 	python3 setup.py install	
@@ -23,7 +23,7 @@ echo -e "\n-----------------------INSTALLING SECRETFINDER-----------------------
 cd ./tools
 git clone https://github.com/m4ll0k/SecretFinder.git
 cd -
-pip3 install --user -r ./tools/SecretFinder/requirements.txt
+python3 -m pip install --user -r ./tools/SecretFinder/requirements.txt
 echo -e "\n-----------------------FINISHED INSTALLING SECRETFINDER------------------------"
 
 #INSTALL GAU
