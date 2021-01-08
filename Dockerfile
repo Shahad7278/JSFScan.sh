@@ -10,7 +10,7 @@ COPY . .
 
 # install all depedencies
 RUN chmod +x ./install.sh
-RUN apt -y update && apt -y install git  	\
+RUN apt-get -y update && apt-get -y install git  	\
 				    wget 	\
 				    python3 	\
 				    python3-pip
